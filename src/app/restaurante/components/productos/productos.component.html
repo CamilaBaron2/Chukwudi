@@ -1,3 +1,5 @@
-<div class="columns is-gapless is-multiline">
-  <app-producto [food]="item" class="column is-4" *ngFor="let item of items" ></app-producto>
+<div class="columns is-multiline">
+  <div class="column is-4" *ngFor="let item of items">
+    <app-producto (click)="mostrarProducto(item)" [food]="item"></app-producto>
+  </div>
 </div>

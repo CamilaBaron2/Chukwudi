@@ -11,4 +11,5 @@ export interface Producto{
   time: string;
   price: number;
   image: string;
+  cantidad?: number;
 }

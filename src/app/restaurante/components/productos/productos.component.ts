@@ -1,5 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Producto } from 'src/app/app.model';
+import { AppService } from 'src/app/app.service';
 
 @Component({
   selector: 'app-productos',
@@ -10,10 +11,14 @@ export class ProductosComponent implements OnInit {
 
   @Input() items: Producto[] = [];
 
-  constructor() { }
+  constructor(private service : AppService) { }
 
   ngOnInit(): void {
 
+  }
+
+  mostrarProducto(producto: Producto){
+    this.service.agregarCarrito(producto)
   }
 
 }

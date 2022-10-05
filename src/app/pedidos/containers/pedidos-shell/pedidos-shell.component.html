@@ -1,1 +1,6 @@
-<app-user></app-user>
+<div class="container">
+  <app-user [totalProductos]="productosAgregados.length"></app-user>
+  <app-order [productos]="productosAgregados"></app-order>
+</div>
+<hr>
+<app-footer></app-footer>

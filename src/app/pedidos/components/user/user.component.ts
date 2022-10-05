@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-user',
@@ -7,17 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserComponent implements OnInit {
 
+  @Input() totalProductos:number = 0;
+
   editar: boolean = false;
   direccion: string = '';
-  choose: boolean =false;
 
 
   edit (){
     this.editar = !this.editar;
-  }
-
-  time (){
-    this.choose = !this.choose
   }
 
   constructor() { }

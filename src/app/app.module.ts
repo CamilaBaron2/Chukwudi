@@ -13,6 +13,7 @@ import { OrderComponent } from './pedidos/components/order/order.component';
 import { PedidosShellComponent } from './pedidos/containers/pedidos-shell/pedidos-shell.component';
 import { UserComponent } from './pedidos/components/user/user.component';
 import { FormsModule } from '@angular/forms';
+import { FooterComponent } from './pedidos/components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { FormsModule } from '@angular/forms';
     OrderComponent,
     PedidosShellComponent,
     UserComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

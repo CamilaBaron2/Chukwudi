@@ -1,13 +1,9 @@
-<div class="tile is-ancestor">
-  <div class="tile is-vertical is-9">
+<div class="columns">
+  <div class="column is-9">
     <app-nav-bar></app-nav-bar>
     <app-restaurante-shell></app-restaurante-shell>
   </div>
-  <div class="tile is-parent">
-    <article class="tile is-child notification is-light">
-      <div class="content">
-        <app-pedidos-shell></app-pedidos-shell>
-      </div>
-    </article>
+  <div class="column is-3 has-background-grey-lighter">
+    <app-pedidos-shell></app-pedidos-shell>
   </div>
 </div>

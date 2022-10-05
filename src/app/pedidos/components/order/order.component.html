@@ -1,1 +1,29 @@
-<p>order works!</p>
+<div class="orden">
+  <div class="columns" *ngFor="let comida of productos">
+    <div class="column is-4">
+      <img [src]="comida.image">
+    </div>
+    <div class="column is-4">
+      <p class="name-producto"><b>{{comida.name}}</b></p>
+    </div>
+    <div class="column is-4">
+      <p>${{comida.price}}</p>
+      <div class="contador">
+        <button title="Restar" class="pluss has-background-grey-lighter"><i class="fa-solid fa-minus"></i></button>
+        <span>{{comida.cantidad}}</span>
+        <button title="Sumar" class="pluss has-background-grey-lighter"><i class="fa-solid fa-plus"></i></button>
+      </div>
+    </div>
+  </div>
+  <div class="columns">
+    <div class="column is-4">
+      <img src="assets/images/delivery.png" alt="">
+    </div>
+    <div class="column is-4">
+      <p><b>Delivery</b></p>
+    </div>
+    <div class="column is-4">
+      <p>$0.00</p>
+    </div>
+  </div>
+</div>

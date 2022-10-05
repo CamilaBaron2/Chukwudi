@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Producto } from 'src/app/app.model';
 
 @Component({
   selector: 'app-order',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrderComponent implements OnInit {
 
+  @Input() productos: Producto[] = [];
+
+  suma (){
+
+  }
+
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }

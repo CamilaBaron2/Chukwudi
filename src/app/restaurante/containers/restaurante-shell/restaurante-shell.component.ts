@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Categoria, Producto } from 'src/app/app.model';
 import { AppService } from 'src/app/app.service';
 
@@ -8,6 +8,7 @@ import { AppService } from 'src/app/app.service';
   styleUrls: ['./restaurante-shell.component.css']
 })
 export class RestauranteShellComponent implements OnInit {
+
 
   categorias: Categoria[] = [];
   productos: Producto[] = [];
@@ -22,6 +23,6 @@ export class RestauranteShellComponent implements OnInit {
     this.service.obtenerProductos().subscribe( respuesta => {
       this.productos = respuesta;
     });
-  }
 
+  }
 }

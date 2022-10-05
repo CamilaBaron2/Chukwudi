@@ -1,0 +1,27 @@
+.checkout{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2rem;
+}
+.button.check{
+  background-color:#ffb800;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px ;
+  height: 5rem;
+  padding: 0 3rem 0 3rem;
+}
+.contador{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: solid .2px;
+  border-radius: 8px;
+}
+.pluss{
+  cursor: pointer;
+  padding: .5rem;
+  border:none;
+  background-color: white;
+  border-radius: 8px;
+  width: 2rem;
+}

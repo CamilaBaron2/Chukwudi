@@ -1,0 +1,16 @@
+<div class="checkout">
+  <div>
+    <p>Persons</p>
+    <div class="contador">
+      <button title="Restar" [disabled]="personas <= 1" (click)="resta()" class="pluss has-background-grey-lighter"><i class="fa-solid fa-minus"></i></button>
+      <span>{{personas}}</span>
+      <button title="Sumar" (click)="suma()" class="pluss has-background-grey-lighter"><i class="fa-solid fa-plus"></i></button>
+    </div>
+  </div>
+  <button class="button check">
+    <span>Checkout</span>
+    <span class="icon">
+      <i class="fa-solid fa-arrow-right"></i>
+    </span>
+  </button>
+</div>

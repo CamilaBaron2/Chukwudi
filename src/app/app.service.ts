@@ -8,6 +8,8 @@ import { Categoria, Producto } from './app.model';
 })
 export class AppService {
 
+  productosOrden: Producto[] = [];
+
   constructor(private http: HttpClient) { }
 
   obtenerCategorias() : Observable<Categoria[]> {
@@ -16,5 +18,13 @@ export class AppService {
 
   obtenerProductos() : Observable<Producto[]>{
     return this.http.get<Producto[]>('assets/products.json');
+  }
+
+  obtenerProductosOrden() {
+    return this.productosOrden;
+  }
+
+  agregarCarrito(producto:Producto){
+    this.productosOrden.push(producto);
   }
 }
