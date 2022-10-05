@@ -1,0 +1,74 @@
+.titulo-restaurante {
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.titulo{
+  display: flex;
+  align-items: center;
+}
+.title{
+  margin-bottom: 0;
+}
+img{
+  height: 30px;
+  max-width: 100px;
+  margin-left: .5rem;
+}
+.button.Delivery{
+  border-radius: 20px;
+  background-color: #fc4b08;
+  color: aliceblue;
+}
+.button.Delivery label {
+  margin: 0 .5rem;
+}
+.barra-Icons{
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+ .button.Iconos {
+  padding-top:30px;
+  padding-bottom:100px;
+  padding-left:12px;
+  padding-right:12px;
+  border-radius:35px;
+  border: none;
+  }
+  .button.Iconos:hover{
+    color: lightcyan;
+    background-color: #ffb800;
+  }
+.redondo{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border:none;
+}
+.Iconos .svg-inline--fa{
+  height: 2rem;
+  padding-top:10px;
+}
+.button.Arrow{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+}
+.button.Arrow:hover{
+  color: lightcyan;
+  background-color: #ffb800;
+}
+@media screen and (max-width: 500px) {
+  .titulo-restaurante {
+    display: block;
+    align-items: center;
+    text-align: center;
+  }
+  .titulo{
+    padding: 1.5rem;
+  }
+}

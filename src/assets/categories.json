@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": "All",
+        "icon":"fa-solid fa-bell-concierge"
+    },
+    {
+        "id": 2,
+        "name": "Pizza",
+        "icon": "fa-solid fa-pizza-slice"
+    },
+    {
+        "id": 3,
+        "name": "Asian",
+        "icon": "fa-solid fa-plate-wheat"
+    },
+    {
+        "id": 4,
+        "name": "Burgers",
+        "icon": "fa-solid fa-burger"
+    },
+    {
+        "id": 5,
+        "name": "Barbecue",
+        "icon": "fa-solid fa-bacon"
+    },
+    {
+        "id": 6,
+        "name": "Dessers",
+        "icon":"fa-solid fa-cheese"
+    },
+    {
+        "id": 7,
+        "name": "Thai",
+        "icon":"fa-solid fa-bowl-food"
+    },
+    {
+        "id": 8,
+        "name": "Sushi",
+        "icon":"fa-solid fa-shrimp"
+    }
+]

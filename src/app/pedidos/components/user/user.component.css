@@ -1,0 +1,30 @@
+.usuario{
+  display: flex;
+  justify-content:end;
+  align-items: center;
+}
+.badge{
+  font-size: 15px;
+  background-color: #ffb800;
+  padding: .5rem .9rem;
+  border-radius: 12px;
+  margin-left: 2rem;
+}
+.notification{
+  font-size: 15px;
+  background-color:blueviolet;
+  border-radius: 7px;
+}
+.button{
+  border: none;
+  background-color: blueviolet;
+  color: #ffb800;
+}
+.reloj{
+  color: #ffb800;
+}
+input{
+  background-color: #6A1B9A;
+  border-radius: 10px;
+  color:white;
+}

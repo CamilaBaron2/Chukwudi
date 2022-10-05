@@ -1,0 +1,14 @@
+.notification{
+  width: 6rem;
+  margin-top: -4rem;
+  margin-left: -1.5rem;
+  padding: 10px;
+  border-radius: 10px;
+}
+.content{
+  display: flex;
+  justify-content:space-between;
+}
+img{
+  max-height: 150px;
+}

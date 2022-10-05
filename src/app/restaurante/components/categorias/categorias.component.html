@@ -1,0 +1,35 @@
+<div>
+  <div class="titulo-restaurante">
+    <div class="titulo">
+      <h2 class="title">Restaurants</h2>
+      <img src="../../../../assets/icons/1046784.svg">
+    </div>
+    <div>
+      <div class="dropdown is-hoverable">
+        <div class="dropdown-trigger">
+          <button class="button Delivery" aria-haspopup="true" aria-controls="dropdown-menu4">
+            <i class="fa-regular fa-clock"></i>
+            <label>Delivery: <b>Now</b></label>
+            <span class="icon is-small">
+              <i class="fas fa-angle-down" aria-hidden="true"></i>
+            </span>
+          </button>
+        </div>
+        <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+          <div class="dropdown-content">
+            <div class="dropdown-item">
+              <p>ENJOY <strong>THE BEST</strong> DISHES. Select Menu</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="barra-Icons">
+    <div class="button Iconos" *ngFor="let item of items">
+      <button class="redondo"><i [class]="item.icon"></i><br><br><span>{{ item.name }}</span></button>
+    </div>
+      <button class="button Arrow"><i class="fa-solid fa-chevron-right"></i></button>
+  </div>
+
+

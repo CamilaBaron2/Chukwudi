@@ -1,0 +1,37 @@
+.notification {
+  border-radius: 20px;
+  margin-top: 5rem;
+  padding-bottom: 0;
+  margin-bottom: 4rem;
+}
+.image {
+  width: 256px;
+  margin-left: 2rem;
+  margin-top: -3rem;
+}
+.column.logo{
+  display: flex;
+}
+.column.delivery{
+  padding-bottom:0;
+}
+.title{
+  color: #fc4b08;
+  margin: 0;
+}
+p{
+  font-size: 14px;
+  color: #9d9d9d;
+}
+.imgFree{
+  width: 35px;
+  margin-left: 1rem;
+}
+.button.is-warning{
+  color: #fc4b08;
+  border-radius: 20px;
+}
+.button.is-warning:hover{
+  color: #fff;
+  background-color: #fc4b08;
+}
