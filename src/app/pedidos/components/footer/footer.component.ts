@@ -16,7 +16,7 @@ export class FooterComponent implements OnInit {
   suma(){
     this.personas++;
   }
-  // personas = 1
+
   resta(){
     if(this.personas > 1){
       this.personas--;

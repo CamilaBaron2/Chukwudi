@@ -6,6 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Chukwudi';
 
+  title = 'Chukwudi';
+  mostrarCarrito:boolean = false;
+
+  mostrar(){
+    this.mostrarCarrito = true;
+  }
 }

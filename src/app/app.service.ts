@@ -25,6 +25,10 @@ export class AppService {
   }
 
   agregarCarrito(producto:Producto){
-    this.productosOrden.push(producto);
+    console.log(producto);
+    if(this.productosOrden.indexOf(producto) === -1){
+      producto.cantidad = 1;
+      this.productosOrden.push(producto);
+    }
   }
 }

@@ -1,17 +1,17 @@
 <div class="orden">
-  <div class="columns" *ngFor="let comida of productos">
+  <div class="columns" *ngFor="let comida of productos; let i = index">
     <div class="column is-4">
-      <img [src]="comida.image">
+      <img class="platos" [src]="comida.image">
     </div>
     <div class="column is-4">
       <p class="name-producto"><b>{{comida.name}}</b></p>
     </div>
     <div class="column is-4">
-      <p>${{comida.price}}</p>
+      <p>${{comida.price*(comida.cantidad || 0)}}</p>
       <div class="contador">
-        <button title="Restar" class="pluss has-background-grey-lighter"><i class="fa-solid fa-minus"></i></button>
+        <button title="Restar" [disabled]="comida.cantidad<=1" (click)="resta(i)" class="pluss has-background-grey-lighter"><i class="fa-solid fa-minus"></i></button>
         <span>{{comida.cantidad}}</span>
-        <button title="Sumar" class="pluss has-background-grey-lighter"><i class="fa-solid fa-plus"></i></button>
+        <button title="Sumar" (click)="suma(i)" class="pluss has-background-grey-lighter"><i class="fa-solid fa-plus"></i></button>
       </div>
     </div>
   </div>
@@ -26,4 +26,5 @@
       <p>$0.00</p>
     </div>
   </div>
+  TOTAL {{total}}
 </div>

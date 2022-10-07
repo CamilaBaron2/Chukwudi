@@ -1,9 +1,12 @@
 <div class="columns">
-  <div class="column is-9">
+  <div class="column is-three-quarters">
     <app-nav-bar></app-nav-bar>
     <app-restaurante-shell></app-restaurante-shell>
+    <div class="container boton">
+      <button class="button is-fullwidth" (click)="mostrar()"> <i class="fa-solid fa-cart-shopping"></i>Carrito de Compras</button>
+    </div>
   </div>
-  <div class="column is-3 has-background-grey-lighter">
+  <div class="carrito column has-background-grey-lighter" [class.active]="mostrarCarrito">
     <app-pedidos-shell></app-pedidos-shell>
   </div>
 </div>

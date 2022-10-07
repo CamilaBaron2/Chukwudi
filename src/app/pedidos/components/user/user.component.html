@@ -2,18 +2,20 @@
   <i class="fa-regular fa-user"></i>
   <span class="badge"><b>{{totalProductos}}</b></span>
 </div>
-<div class="time mt-6">
-  <p class="title">My 😎 <br> Order</p>
-  <div class="notification">
-    <div class="is-flex is-justify-content-space-between is-align-items-center">
-      <span *ngIf="!editar" class="has-text-white">{{direccion}}</span>
-      <input *ngIf="editar" [(ngModel)]="direccion" type="text">
-      <button (click)="edit()" class="button">Edit</button>
-    </div>
-    <div class="mt-4 is-flex is-justify-content-space-between is-align-items-center">
-      <i class=" reloj fa-regular fa-clock"></i>
-      <span class="has-text-white">30 min</span>
-      <button class="button">Choose Time</button>
+<div class="columns mt-6">
+  <div class="column">
+    <p class="title">My 😎 <br> Order</p>
+    <div class="notification">
+      <div class="is-flex is-justify-content-space-between is-align-items-center">
+        <span *ngIf="!editar" class="has-text-white">{{direccion}}</span>
+        <input *ngIf="editar" [(ngModel)]="direccion" type="text">
+        <button (click)="edit()" class="button">Edit</button>
+      </div>
+      <div class="mt-4 is-flex is-justify-content-space-between is-align-items-center">
+        <i class=" reloj fa-regular fa-clock"></i>
+        <span class="has-text-white">30 min</span>
+        <button class="button">Choose Time</button>
+      </div>
     </div>
   </div>
 </div>

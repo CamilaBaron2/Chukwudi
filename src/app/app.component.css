@@ -1,3 +1,22 @@
-.tile.is-parent {
-  padding: 0;
+@media screen and (max-width: 500px){
+  .carrito {
+    display: none;
+    align-items: center;
+    text-align: center;
+  }
+  .carrito.active{
+    display: block;
+  }
 }
+@media screen and (min-width:500px){
+  .container.boton{
+    display: none;
+  }
+}
+button{
+  border: none;
+  border-radius: 20px;
+  background-color: #fc4b08;
+  color: aliceblue;
+}
+

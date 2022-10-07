@@ -1,1 +1,12 @@
-
+.ocultar{
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+.titulo{
+  display: flex;
+  justify-content:space-around;
+}
+.lineas{
+  height: 2rem;
+}
