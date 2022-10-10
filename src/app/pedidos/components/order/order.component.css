@@ -27,6 +27,13 @@ img{
 .column.is-3{
   text-align: center;
 }
+.subtitle{
+  justify-content: space-between;
+  display: flex;
+}
+.costo{
+
+}
 @media screen and (max-width: 500px){
 .platos{
   max-width: 100%;
